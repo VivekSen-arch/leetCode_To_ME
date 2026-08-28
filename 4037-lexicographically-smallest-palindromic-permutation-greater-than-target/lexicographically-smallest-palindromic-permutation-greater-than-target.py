@@ -33,7 +33,6 @@ class Solution:
 
             return left + left[::-1]
 
-        # First check if target's left half itself is possible
         used = [0] * 26
         possible = True
 
@@ -51,7 +50,6 @@ class Solution:
             if candidate > target:
                 return candidate
 
-        # Find the smallest left half greater than target's left half
         for pos in range(m - 1, -1, -1):
 
             used = [0] * 26
