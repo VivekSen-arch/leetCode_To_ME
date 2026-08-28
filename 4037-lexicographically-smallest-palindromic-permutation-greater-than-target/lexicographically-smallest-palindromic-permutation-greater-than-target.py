@@ -7,7 +7,6 @@ class Solution:
         for ch in s:
             cnt[ord(ch) - ord('a')] += 1
 
-        # Check if palindrome is possible
         odd = 0
         middle = ""
 
@@ -19,7 +18,6 @@ class Solution:
         if odd > 1:
             return ""
 
-        # Characters for left half
         half = [0] * 26
 
         for i in range(26):
